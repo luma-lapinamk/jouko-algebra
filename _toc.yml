@@ -1,0 +1,20 @@
+# Table of contents
+# ------------------
+format: jb-book
+root: notebooks/intro
+chapters:
+- file: notebooks/prosenttilaskut
+- file: notebooks/potenssit
+- file: notebooks/juuret
+- file: notebooks/murtoluvut
+- file: notebooks/polynomit
+- file: notebooks/1aste
+- file: notebooks/2aste
+- file: notebooks/yhtaloparit
+- file: notebooks/lineaarimalli
+- file: notebooks/2asteenmalli
+- file: notebooks/itseisarvo
+- file: notebooks/verrannollisuus
+- file: notebooks/mittakaava
+- file: notebooks/muutyhtalot
+- file: notebooks/eksponenttilog
