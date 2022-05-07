@@ -10,12 +10,6 @@ logo: images/logo.png
 execute:
   execute_notebooks: force
 
-# Sphinx settings
-# ----------------
-sphinx:
-  config:
-    language: fi
-
 # GitHub-settings
 # ----------------
 repository:
