@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html lang="fi">
+<html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +40,6 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -51,12 +50,12 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="index" title="Sisällysluettelo" href="../genindex.html" />
-    <link rel="search" title="Etsi" href="../search.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Murtoluvut ja murtolausekkeet" href="murtoluvut.html" />
     <link rel="prev" title="Potenssien laskusäännöt" href="potenssit.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="fi">
+    <meta name="docsearch:language" content="None">
     
 
     <!-- Google Analytics -->
@@ -88,7 +87,7 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Hae tästä kirjasta ..." aria-label="Hae tästä kirjasta ..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
@@ -199,8 +198,8 @@ const thebe_selector_output = ".output, .cell_output"
             
             <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
                 data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Vaihda navigointia" aria-controls="site-navigation"
-                title="Vaihda navigointia" data-toggle="tooltip" data-placement="left">
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-arrow-left"></i>
                 <i class="fas fa-arrow-up"></i>
@@ -208,7 +207,7 @@ const thebe_selector_output = ".output, .cell_output"
             
             
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Lataa tämä sivu"><i
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
@@ -216,10 +215,10 @@ const thebe_selector_output = ".output, .cell_output"
         
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../_sources/notebooks/juuret.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Lataa lähdetiedosto" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Tulosta PDF-tiedostoon"
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
@@ -232,8 +231,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
             href="https://github.com/luma-lapinamk/jouko-algebra"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Lähteen arkisto"><i
-                    class="fab fa-github"></i>arkisto</button></a>
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
         
         
     </div>
@@ -242,8 +241,8 @@ const thebe_selector_output = ".output, .cell_output"
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Koko näytön tila"
-        title="Koko näytön tila"><i
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
             class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
@@ -254,7 +253,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="dropdown-buttons">
         
         <a class="binder-button" href="https://mybinder.org/v2/gh/luma-lapinamk/jouko-algebra/master?urlpath=tree/notebooks/juuret.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Tuoda markkinoille Binder" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
@@ -271,7 +270,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Sisällys
+                <i class="fas fa-list"></i> Contents
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -296,7 +295,7 @@ const thebe_selector_output = ".output, .cell_output"
                     <div id="jb-print-toc">
                         
                         <div>
-                            <h2> Sisällys </h2>
+                            <h2> Contents </h2>
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
@@ -326,7 +325,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="math notranslate nohighlight">\(\sqrt{2}\approx1.414\)</span>, koska <span class="math notranslate nohighlight">\(1.414^2\approx2\)</span><br />
 <span class="math notranslate nohighlight">\(\sqrt{-4}\)</span> ei ole olemassa (minkään luvun neliö ei ole negatiivinen)</p>
 <div class="admonition note">
-<p class="admonition-title">Muista</p>
+<p class="admonition-title">Note</p>
 <p>Neliöjuuren määritelmä voidaan esittää myös muodossa<br />
 <span class="math notranslate nohighlight">\(\sqrt{a}\)</span> on yhtälön <span class="math notranslate nohighlight">\(x^2=a\)</span> positiivinen juuri.</p>
 </div>
@@ -340,7 +339,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="math notranslate nohighlight">\(\sqrt[3]{-125} = -5\)</span>  , koska <span class="math notranslate nohighlight">\({(-5)}^3 = -125\)</span><br />
 <span class="math notranslate nohighlight">\(\sqrt[3]{10} \approx 2.154\)</span>  , koska <span class="math notranslate nohighlight">\(2.154^3 \approx 10\)</span></p>
 <div class="admonition note">
-<p class="admonition-title">Muista</p>
+<p class="admonition-title">Note</p>
 <p><span class="math notranslate nohighlight">\(\sqrt[3]{a}\)</span> on yhtälön <span class="math notranslate nohighlight">\(x^3=a\)</span> juuri.</p>
 </div>
 <div class="tip admonition">
@@ -427,16 +426,16 @@ Kun n on parillinen, <span class="math notranslate nohighlight">\(\sqrt[n]{a}\)<
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="potenssit.html" title="< page">
+    <a class='left-prev' id="prev-link" href="potenssit.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle"><</p>
+            <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Potenssien laskusäännöt</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="murtoluvut.html" title="> page">
+    <a class='right-next' id="next-link" href="murtoluvut.html" title="next page">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">></p>
+        <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Murtoluvut ja murtolausekkeet</p>
     </div>
     <i class="fas fa-angle-right"></i>
@@ -448,9 +447,9 @@ Kun n on parillinen, <span class="math notranslate nohighlight">\(\sqrt[n]{a}\)<
     <footer class="footer">
   <p>
     
-      Tekijä Jouko Teeriaho<br/>
+      By Jouko Teeriaho<br/>
     
-        &copy; Tekijänoikeus 2022.<br/>
+        &copy; Copyright 2022.<br/>
   </p>
 </footer>
 </main>
